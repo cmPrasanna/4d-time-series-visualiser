@@ -16,90 +16,70 @@
         "_type": "sample_type",
         "_id": "7",
         "_score": 0.47000363,
-        "_source": {
-          
-        }
+        "_source": {}
       },
       {
         "_index": "sample_index",
         "_type": "sample_type",
         "_id": "13",
         "_score": 0.47000363,
-        "_source": {
-          
-        }
+        "_source": {}
       },
       {
         "_index": "sample_index",
         "_type": "sample_type",
         "_id": "4",
         "_score": 0.35667494,
-        "_source": {
-          
-        }
+        "_source": {}
       },
       {
         "_index": "sample_index",
         "_type": "sample_type",
         "_id": "6",
         "_score": 0.35667494,
-        "_source": {
-          
-        }
+        "_source": {}
       },
       {
         "_index": "sample_index",
         "_type": "sample_type",
         "_id": "15",
         "_score": 0.35667494,
-        "_source": {
-          
-        }
+        "_source": {}
       },
       {
         "_index": "sample_index",
         "_type": "sample_type",
         "_id": "5",
         "_score": 0.2876821,
-        "_source": {
-          
-        }
+        "_source": {}
       },
       {
         "_index": "sample_index",
         "_type": "sample_type",
         "_id": "8",
         "_score": 0.2876821,
-        "_source": {
-          
-        }
+        "_source": {}
       },
       {
         "_index": "sample_index",
         "_type": "sample_type",
         "_id": "10",
         "_score": 0.2876821,
-        "_source": {
-          
-        }
+        "_source": {}
       },
       {
         "_index": "sample_index",
         "_type": "sample_type",
         "_id": "12",
         "_score": 0.2876821,
-        "_source": {
-          
-        }
+        "_source": {}
       },
       {
         "_index": "sample_index",
         "_type": "sample_type",
         "_id": "3",
         "_score": 0.18232156,
-        "_source": {
-          
-        }
+        "_source": {}
       }
     ]
   },
@@ -115,7 +95,7 @@
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "corebuild",
+                "key": "buildA",
                 "doc_count": 1,
                 "runs": {
                   "doc_count_error_upper_bound": 0,
@@ -138,11 +118,9 @@
                                 "ProjectName": "TestProject",
                                 "timestamp": "2018-01-18T10:15:30Z",
                                 "createdDate": "2018-01-18T10:15:30Z",
-                                "accessserviceid": "testartifactory-accessid",
-                                "serviceid": "testartifactory-serviceid1",
                                 "Runnumber": 1,
                                 "Commits": "2",
-                                "BuildName": "corebuild",
+                                "BuildName": "BuildA",
                                 "artefacts": [
                                   {
                                     "name": "phar",
@@ -160,11 +138,11 @@
                                 "modules": [
                                   {
                                     "dependencies": 5,
-                                    "name": "coremodule"
+                                    "name": "BuildA"
                                   },
                                   {
                                     "dependencies": 10,
-                                    "name": "sdkmodule"
+                                    "name": "BuildB"
                                   }
                                 ],
                                 "stage": "test"
@@ -192,7 +170,7 @@
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "executorbuild",
+                "key": "BuildB",
                 "doc_count": 1,
                 "runs": {
                   "doc_count_error_upper_bound": 0,
@@ -215,11 +193,9 @@
                                 "ProjectName": "TestProject",
                                 "timestamp": "2018-01-18T10:30:30Z",
                                 "createdDate": "2018-01-18T10:30:30Z",
-                                "accessserviceid": "testartifactorySample2-accessid",
-                                "serviceid": "testartifactorySample2-serviceid1",
                                 "Runnumber": 1,
                                 "Commits": "2",
-                                "BuildName": "executorbuild",
+                                "BuildName": "BuildC",
                                 "artefacts": [
                                   {
                                     "name": "war",
@@ -237,11 +213,11 @@
                                 "modules": [
                                   {
                                     "dependencies": 5,
-                                    "name": "executormodule"
+                                    "name": "BuildExternal"
                                   },
                                   {
                                     "dependencies": 10,
-                                    "name": "sdkmodule"
+                                    "name": "BuildZ"
                                   }
                                 ],
                                 "stage": "dev"
@@ -269,7 +245,7 @@
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "corebuild",
+                "key": "BuildA",
                 "doc_count": 2,
                 "runs": {
                   "doc_count_error_upper_bound": 0,
@@ -292,11 +268,9 @@
                                 "ProjectName": "TestProject",
                                 "timestamp": "2018-01-18T11:28:30Z",
                                 "createdDate": "2018-01-18T11:25:30Z",
-                                "accessserviceid": "testartifactory-accessid",
-                                "serviceid": "testartifactory-serviceid1",
                                 "Runnumber": 2,
                                 "Commits": "2",
-                                "BuildName": "corebuild",
+                                "BuildName": "BuildA",
                                 "artefacts": [
                                   {
                                     "name": "phar",
@@ -314,7 +288,7 @@
                                 "modules": [
                                   {
                                     "dependencies": 5,
-                                    "name": "coremodule"
+                                    "name": "BuildA"
                                   },
                                   {
                                     "dependencies": 10,
@@ -335,7 +309,7 @@
                 }
               },
               {
-                "key": "executorbuild",
+                "key": "BuildB",
                 "doc_count": 2,
                 "runs": {
                   "doc_count_error_upper_bound": 0,
@@ -358,11 +332,9 @@
                                 "ProjectName": "TestProject",
                                 "timestamp": "2018-01-18T11:25:30Z",
                                 "createdDate": "2018-01-18T11:25:30Z",
-                                "accessserviceid": "testartifactorySample2-accessid",
-                                "serviceid": "testartifactorySample2-serviceid1",
                                 "Runnumber": 4,
                                 "Commits": "2",
-                                "BuildName": "executorbuild",
+                                "BuildName": "BuildB",
                                 "artefacts": [
                                   {
                                     "name": "war",
@@ -414,11 +386,9 @@
                                 "ProjectName": "TestProject",
                                 "timestamp": "2018-01-18T11:28:30Z",
                                 "createdDate": "2018-01-18T11:28:30Z",
-                                "accessserviceid": "testartifactorySample2-accessid",
-                                "serviceid": "testartifactorySample2-serviceid1",
                                 "Runnumber": 5,
                                 "Commits": "2",
-                                "BuildName": "executorbuild",
+                                "BuildName": "BuildB",
                                 "artefacts": [
                                   {
                                     "name": "war",
@@ -468,7 +438,7 @@
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "executorbuild",
+                "key": "BuildB",
                 "doc_count": 1,
                 "runs": {
                   "doc_count_error_upper_bound": 0,
@@ -491,11 +461,9 @@
                                 "ProjectName": "TestProject",
                                 "timestamp": "2018-01-18T11:35:30Z",
                                 "createdDate": "2018-01-18T11:35:30Z",
-                                "accessserviceid": "testartifactorySample2-accessid",
-                                "serviceid": "testartifactorySample2-serviceid1",
                                 "Runnumber": 6,
                                 "Commits": "2",
-                                "BuildName": "executorbuild",
+                                "BuildName": "BuildB",
                                 "artefacts": [
                                   {
                                     "name": "war",
@@ -545,7 +513,7 @@
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "corebuild",
+                "key": "BuildA",
                 "doc_count": 1,
                 "runs": {
                   "doc_count_error_upper_bound": 0,
@@ -568,11 +536,9 @@
                                 "ProjectName": "TestProject",
                                 "timestamp": "2018-01-18T15:45:30Z",
                                 "createdDate": "2018-01-18T15:45:30Z",
-                                "accessserviceid": "testartifactory-accessid",
-                                "serviceid": "testartifactory-serviceid1",
                                 "Runnumber": 2,
                                 "Commits": "2",
-                                "BuildName": "corebuild",
+                                "BuildName": "BuildA",
                                 "artefacts": [
                                   {
                                     "name": "phar",
@@ -611,7 +577,7 @@
                 }
               },
               {
-                "key": "executorbuild",
+                "key": "BuildB",
                 "doc_count": 1,
                 "runs": {
                   "doc_count_error_upper_bound": 0,
@@ -634,11 +600,9 @@
                                 "ProjectName": "TestProject",
                                 "timestamp": "2018-01-18T15:45:30Z",
                                 "createdDate": "2018-01-18T15:45:30Z",
-                                "accessserviceid": "testartifactorySample2-accessid",
-                                "serviceid": "testartifactorySample2-serviceid1",
                                 "Runnumber": 2,
                                 "Commits": "2",
-                                "BuildName": "executorbuild",
+                                "BuildName": "BuildB",
                                 "artefacts": [
                                   {
                                     "name": "war",
@@ -688,7 +652,7 @@
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "corebuild",
+                "key": "BuildA",
                 "doc_count": 1,
                 "runs": {
                   "doc_count_error_upper_bound": 0,
@@ -711,11 +675,9 @@
                                 "ProjectName": "TestProject",
                                 "timestamp": "2018-01-18T16:00:30Z",
                                 "createdDate": "2018-01-18T16:00:30Z",
-                                "accessserviceid": "testartifactory-accessid",
-                                "serviceid": "testartifactory-serviceid1",
                                 "Runnumber": 3,
                                 "Commits": "5",
-                                "BuildName": "corebuild",
+                                "BuildName": "BuildA",
                                 "artefacts": [
                                   {
                                     "name": "phar",
@@ -765,7 +727,7 @@
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "corebuild",
+                "key": "BuildA",
                 "doc_count": 1,
                 "runs": {
                   "doc_count_error_upper_bound": 0,
@@ -788,11 +750,9 @@
                                 "ProjectName": "TestProject",
                                 "timestamp": "2018-01-18T16:15:30Z",
                                 "createdDate": "2018-01-18T16:15:30Z",
-                                "accessserviceid": "testartifactory-accessid",
-                                "serviceid": "testartifactory-serviceid1",
                                 "Runnumber": 2,
                                 "Commits": "2",
-                                "BuildName": "corebuild",
+                                "BuildName": "BuildA",
                                 "artefacts": [
                                   {
                                     "name": "phar",
